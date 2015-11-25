@@ -1,8 +1,9 @@
 import UIKit
 
-class Races2TableViewController: UITableViewController {
+class TypeRacesTableViewController: UITableViewController {
     
     var pokedexModel = PokedexModel()
+    var type : Type?
     
     override func viewWillAppear(animated: Bool) {
         self.clearsSelectionOnViewWillAppear = self.splitViewController!.collapsed
@@ -28,25 +29,23 @@ class Races2TableViewController: UITableViewController {
     // MARK: - Table view data source
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        let type = pokedexModel.types[section]
-        return type.races.count
+        return type!.races.count
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Race Cell", forIndexPath: indexPath)
         
-        let type = pokedexModel.types[indexPath.section]
-        let race = type.races[indexPath.row]
+        let race = type!.races[indexPath.row]
         
         cell.imageView?.image = UIImage(named: race.icon)
-        cell.textLabel?.text = race.name
+        cell.textLabel?.text = race.name.capitalizedString
         cell.detailTextLabel?.text = race.code
         
         return cell
     }
     
     override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return pokedexModel.types[section].name
+        return type!.name.capitalizedString
     }
     
     /*
@@ -98,9 +97,7 @@ class Races2TableViewController: UITableViewController {
                 let cell = sender as? UITableViewCell,
                 let ip = tableView.indexPathForCell(cell) {
                     
-                    let type = pokedexModel.types[ip.section]
-                    
-                    wvc.race = type.races[ip.row]
+                    wvc.race = type!.races[ip.row]
                     
                     wvc.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem()
                     wvc.navigationItem.leftItemsSupplementBackButton = true

@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5C630A7C1C0624DB004FBAF7 /* Races2TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C630A7B1C0624DB004FBAF7 /* Races2TableViewController.swift */; };
+		5C630A7C1C0624DB004FBAF7 /* TypeRacesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C630A7B1C0624DB004FBAF7 /* TypeRacesTableViewController.swift */; };
 		DE9ECC841BF37E5F00A4D966 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9ECC831BF37E5F00A4D966 /* AppDelegate.swift */; };
 		DE9ECC8B1BF37E5F00A4D966 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE9ECC891BF37E5F00A4D966 /* Main.storyboard */; };
 		DE9ECC8D1BF37E5F00A4D966 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE9ECC8C1BF37E5F00A4D966 /* Assets.xcassets */; };
 		DE9ECC901BF37E5F00A4D966 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE9ECC8E1BF37E5F00A4D966 /* LaunchScreen.storyboard */; };
-		DE9ECC981BF37F5C00A4D966 /* RacesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9ECC971BF37F5C00A4D966 /* RacesTableViewController.swift */; };
+		DE9ECC981BF37F5C00A4D966 /* TypesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9ECC971BF37F5C00A4D966 /* TypesTableViewController.swift */; };
 		DE9ECC9C1BF381BB00A4D966 /* pokemons.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE9ECC9B1BF381BB00A4D966 /* pokemons.plist */; };
 		DE9ECC9E1BF381C600A4D966 /* PokedexModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9ECC9D1BF381C600A4D966 /* PokedexModel.swift */; };
 		DE9ECCA01BF381CD00A4D966 /* Race.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9ECC9F1BF381CD00A4D966 /* Race.swift */; };
@@ -272,14 +272,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5C630A7B1C0624DB004FBAF7 /* Races2TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Races2TableViewController.swift; sourceTree = "<group>"; };
+		5C630A7B1C0624DB004FBAF7 /* TypeRacesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeRacesTableViewController.swift; sourceTree = "<group>"; };
 		DE9ECC801BF37E5F00A4D966 /* Pokedex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pokedex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE9ECC831BF37E5F00A4D966 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE9ECC8A1BF37E5F00A4D966 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DE9ECC8C1BF37E5F00A4D966 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE9ECC8F1BF37E5F00A4D966 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE9ECC911BF37E5F00A4D966 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DE9ECC971BF37F5C00A4D966 /* RacesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RacesTableViewController.swift; sourceTree = "<group>"; };
+		DE9ECC971BF37F5C00A4D966 /* TypesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypesTableViewController.swift; sourceTree = "<group>"; };
 		DE9ECC9B1BF381BB00A4D966 /* pokemons.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = pokemons.plist; sourceTree = "<group>"; };
 		DE9ECC9D1BF381C600A4D966 /* PokedexModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokedexModel.swift; sourceTree = "<group>"; };
 		DE9ECC9F1BF381CD00A4D966 /* Race.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Race.swift; sourceTree = "<group>"; };
@@ -569,8 +569,8 @@
 			isa = PBXGroup;
 			children = (
 				DE9ECC831BF37E5F00A4D966 /* AppDelegate.swift */,
-				DE9ECC971BF37F5C00A4D966 /* RacesTableViewController.swift */,
-				5C630A7B1C0624DB004FBAF7 /* Races2TableViewController.swift */,
+				DE9ECC971BF37F5C00A4D966 /* TypesTableViewController.swift */,
+				5C630A7B1C0624DB004FBAF7 /* TypeRacesTableViewController.swift */,
 				DE9ECE9A1BF3843100A4D966 /* WebViewController.swift */,
 				DE9ECC891BF37E5F00A4D966 /* Main.storyboard */,
 				DE9ECC9D1BF381C600A4D966 /* PokedexModel.swift */,
@@ -1167,8 +1167,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE9ECC9E1BF381C600A4D966 /* PokedexModel.swift in Sources */,
-				5C630A7C1C0624DB004FBAF7 /* Races2TableViewController.swift in Sources */,
-				DE9ECC981BF37F5C00A4D966 /* RacesTableViewController.swift in Sources */,
+				5C630A7C1C0624DB004FBAF7 /* TypeRacesTableViewController.swift in Sources */,
+				DE9ECC981BF37F5C00A4D966 /* TypesTableViewController.swift in Sources */,
 				DE9ECCA21BF381D600A4D966 /* Type.swift in Sources */,
 				DE9ECCA01BF381CD00A4D966 /* Race.swift in Sources */,
 				DE9ECC841BF37E5F00A4D966 /* AppDelegate.swift in Sources */,
