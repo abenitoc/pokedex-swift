@@ -2,6 +2,45 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>icono_tipo</key>
+	<dict>
+		<key>acero</key>
+		<string>steel.jpeg</string>
+		<key>agua</key>
+		<string>water.jpeg</string>
+		<key>bicho</key>
+		<string>bug.jpeg</string>
+		<key>demonio</key>
+		<string>dark.jpeg</string>
+		<key>dragon</key>
+		<string>dragon.jpeg</string>
+		<key>electrico</key>
+		<string>electric.jpeg</string>
+		<key>fantasma</key>
+		<string>ghost.jpeg</string>
+		<key>fuego</key>
+		<string>fire.jpeg</string>
+		<key>hielo</key>
+		<string>ice.jpeg</string>
+		<key>lucha</key>
+		<string>fighting.jpeg</string>
+		<key>normal</key>
+		<string>normal.jpeg</string>
+		<key>nuevo</key>
+		<string>fairy.jpeg</string>
+		<key>planta</key>
+		<string>grass.jpeg</string>
+		<key>psiquico</key>
+		<string>psychic.jpeg</string>
+		<key>roca</key>
+		<string>rock.jpeg</string>
+		<key>tierra</key>
+		<string>ground.jpeg</string>
+		<key>veneno</key>
+		<string>poison.jpeg</string>
+		<key>volador</key>
+		<string>flying.jpeg</string>
+	</dict>
 	<key>iconos</key>
 	<dict>
 		<key>1</key>

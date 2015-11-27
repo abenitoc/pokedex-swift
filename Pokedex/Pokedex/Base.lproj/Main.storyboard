@@ -24,10 +24,10 @@
             </objects>
             <point key="canvasLocation" x="-352" y="-442"/>
         </scene>
-        <!--Pokedex-->
+        <!--Types-->
         <scene sceneID="jqY-kM-W0Z">
             <objects>
-                <tableViewController id="bgU-Q0-nmV" customClass="TypesTableViewController" customModule="Pokedex" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Types" id="bgU-Q0-nmV" customClass="TypesTableViewController" customModule="Pokedex" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="kNc-0p-Qv3">
                         <rect key="frame" x="0.0" y="0.0" width="300" height="400"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -62,7 +62,7 @@
                                 </tableViewCellContentView>
                                 <animations/>
                                 <connections>
-                                    <segue destination="f24-eA-SCh" kind="showDetail" identifier="Show Concrete Races" id="qQ3-bx-OgC"/>
+                                    <segue destination="f24-eA-SCh" kind="show" identifier="Show Concrete Races" action="showDetailViewController:sender:" id="qQ3-bx-OgC"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -72,8 +72,6 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Pokedex" id="p1M-i6-0dr"/>
-                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="300" height="400"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FcN-AU-hQH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

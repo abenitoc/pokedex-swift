@@ -20,11 +20,14 @@ class Type {
     // Todas las razas de este tipo.
     var races: [Race]
     
+    var type_icon: String
+    
     // Inicializador de la clase Type
-    init(name: String, races: [Race]) {
+    init(name: String, races: [Race], type_icon: String) {
         
         self.name = name
         self.races = races
+        self.type_icon = type_icon
     }
     
 }

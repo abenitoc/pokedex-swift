@@ -32,6 +32,7 @@ class PokedexModel {
         let allNames = plist["nombres"]! as! [String:String]
         let allIcons = plist["iconos"]!  as! [String:String]
         let allTypes = plist["tipos"]!   as! [String:[Int]]
+        let allTypeIcons = plist["icono_tipo"] as! [String:String]
         
         // Calcular valor de la propiedad self.races.
         races = []
@@ -56,7 +57,7 @@ class PokedexModel {
             racesOfThisType.sortInPlace({ (race1:Race, race2:Race) -> Bool in
                 return race1.name < race2.name
             })
-            types.append(Type(name: name, races: racesOfThisType))
+            types.append(Type(name: name, races: racesOfThisType, type_icon: allTypeIcons[name]!))
         }
 
         types.sortInPlace({ (type1, type2) -> Bool in

@@ -44,6 +44,7 @@ class TypesTableViewController: UITableViewController {
         
         cell.textLabel?.text = type.name.capitalizedString
         cell.detailTextLabel?.text = String(type.races.count)
+        cell.imageView?.image = UIImage(named: "type_icon/" + type.type_icon)
         
         return cell
     }
