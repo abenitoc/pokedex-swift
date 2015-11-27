@@ -6,10 +6,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Master-->
+        <!--Pokedex-->
         <scene sceneID="pY4-Hu-kfo">
             <objects>
-                <navigationController title="Master" id="RMx-3f-FxP" sceneMemberID="viewController">
+                <navigationController title="Pokedex" id="RMx-3f-FxP" sceneMemberID="viewController">
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="300" height="400"/>
                     <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Pmd-2v-anx">
@@ -71,7 +71,7 @@
                             <outlet property="delegate" destination="bgU-Q0-nmV" id="P8u-uM-KWd"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Pokedex" id="p1M-i6-0dr"/>
+                    <navigationItem key="navigationItem" title="Pokedex Types" id="p1M-i6-0dr"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FcN-AU-hQH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -121,7 +121,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Nei-TZ-mAw">
-                        <barButtonItem key="rightBarButtonItem" title="Item" systemItem="undo" id="EAf-wO-pmP">
+                        <barButtonItem key="rightBarButtonItem" systemItem="undo" id="EAf-wO-pmP">
                             <connections>
                                 <action selector="goBack" destination="7FX-lQ-cDu" id="iUw-hF-JU5"/>
                             </connections>
