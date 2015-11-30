@@ -1,30 +1,14 @@
-//
-//  PokedexModel.swift
-//  Pokedex
-//
-//  Created by Santiago Pavón on 26/11/14.
-//  Copyright (c) 2014 UPM. All rights reserved.
-//
-
 import Foundation
 
-/**
-* Modelo de datos de los pokemons.
-* Tiene informacion sobre las razas y los tipos de pokemons.
-*/
+
 class PokedexModel {
     
-    // Array de objetos Race.
     var races: [Race]
     
-    // Array de objetos Type.
     var types: [Type]
     
     init() {
-        
-        // Cargar los datos desde pokemons.plist
-        // y rellenar las propiedades races y types.
-        
+
         let path = NSBundle.mainBundle().pathForResource("pokemons", ofType: "plist")!
         
         let plist = NSDictionary(contentsOfFile: path)!
@@ -34,7 +18,6 @@ class PokedexModel {
         let allTypes = plist["tipos"]!   as! [String:[Int]]
         let allTypeIcons = plist["icono_tipo"] as! [String:String]
         
-        // Calcular valor de la propiedad self.races.
         races = []
         for (code,name) in allNames {
             races.append(Race(code: code, name: name, icon: allIcons[code]!))
@@ -43,7 +26,6 @@ class PokedexModel {
             return race1.name < race2.name
         })
         
-        // Calcular valor de la propiedad self.types.
         types = []
         for (name,raceCodes) in allTypes {
             var racesOfThisType: [Race] = raceCodes.map({ (code) -> Race in

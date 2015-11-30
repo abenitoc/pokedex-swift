@@ -1,10 +1,3 @@
-//
-//  RacesTableViewController.swift
-//  Pokedex
-//
-//  Created by Santiago Pavón on 11/11/15.
-//  Copyright © 2015 UPM. All rights reserved.
-//
 
 import UIKit
 
@@ -57,15 +50,12 @@ class TypesTableViewController: UITableViewController {
         
         if segue.identifier == "Show Concrete Races" {
 
-            if let nc = segue.destinationViewController as? UINavigationController,
-                let r2 = nc.topViewController as? TypeRacesTableViewController,
+            if let nc = segue.destinationViewController as? TypeRacesTableViewController,
                 let cell = sender as? UITableViewCell,
                 let ip = tableView.indexPathForCell(cell) {
 
                     let type = pokedexModel.types[ip.row]
-                    r2.type = type
-                    r2.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem()
-                    r2.navigationItem.leftItemsSupplementBackButton = true
+                    nc.type = type
             }
         }
     }

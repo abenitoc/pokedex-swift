@@ -62,7 +62,7 @@
                                 </tableViewCellContentView>
                                 <animations/>
                                 <connections>
-                                    <segue destination="f24-eA-SCh" kind="show" identifier="Show Concrete Races" action="showDetailViewController:sender:" id="qQ3-bx-OgC"/>
+                                    <segue destination="sdj-xl-hzm" kind="show" identifier="Show Concrete Races" id="1TV-TT-1AU"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -181,28 +181,12 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Races" id="wbg-b2-6bh"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="300" height="400"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Lz-92-unF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-567" y="150"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="w9Q-5U-MOg">
-            <objects>
-                <navigationController id="f24-eA-SCh" sceneMemberID="viewController">
-                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="300" height="400"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="elR-ow-Xr9">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="sdj-xl-hzm" kind="relationship" relationship="rootViewController" id="dTc-nE-hkW"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="80l-Vh-2Qv" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="501" y="-442"/>
+            <point key="canvasLocation" x="-635" y="164"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="r7l-gg-dq7">
